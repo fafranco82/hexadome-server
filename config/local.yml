@@ -1,0 +1,19 @@
+database:
+    url: mongodb://127.0.0.1:27017/hexadome
+jwt:
+    secret: estaesmiclavesecreteparalostokensjwt
+router:
+    url: tcp://127.0.0.1:8888
+gamenode:
+    identity: test1
+    host: localhost
+    socketio:
+        port: 9500
+i18n:
+    languages:
+        - en
+    loco:
+        endpoint: https://localise.biz:443/api
+        keys:
+            read: r0KyXh2Sth8_X8g9ifWu1f9n_inAe3uX
+            write: "x_-2rQp7i1L52CNBVXJ8VJd5r3iuDO2mF"

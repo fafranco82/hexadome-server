@@ -1,0 +1,52 @@
+---
+game:
+  connection:
+    created: '[[player]] has created a new game'
+    join: '[[player]] has joined the game'
+    watch: '[[player]] has joined the game as spectator'
+    leave: '[[player]] has left the game'
+    connect: '[[player]] has connected to the game server'
+    disconnect: '[[player]] has disconnected'
+    reconnect: '[[player]] has reconnected'
+    selectdeck: '[[player]] has selected a deck'
+  phases:
+    setup: Setup phase
+    action: Action phase
+    upkeep: Upkeep phase
+  setup:
+    announce:
+      characters: '[[player]] announces they will play with [[characters]]'
+      plot: '[[player]] announces they will use the plot [[plot]]'
+      roll: '[[player]] has rolled a total value of [[value]]'
+      tieRoll: There was a tie in starting roll. Repeating...
+      rollWinner: '[[player]] has won the starting roll'
+  finish:
+    concede: '[[player]] concedes'
+    winner: '[[player]] has won the game!'
+  actions:
+    shuffle: '[[player]] is shuffling their draw deck'
+  prompts:
+    common:
+      titles:
+        waiting: Waiting for opponent
+      buttons:
+        done: Done
+        pass: Pass
+    mulligan:
+      titles:
+        prompt: Mulligan
+        active: Select cards to mulligan
+        waiting: Waiting for opponent to keep hand or mulligan
+      results:
+        keep: '[[player]] has kept their hand'
+        mulligan: '[[player]] has mulliganed [[count]] card'
+        mulligan_plural: '[[player]] has mulliganed [[count]] cards'
+    battlefield:
+      titles:
+        prompt: Select Battlefield
+        active: Select one battlefield
+        waiting: Waiting for opponent to select a battlefield
+      results:
+        mine: '[[player]] has selected their [[battlefield]] as the battlefield'
+        opponent: '[[player]] has selected opponent''s [[battlefield]] as the battlefield'
+...

@@ -1,0 +1,5 @@
+---
+first: '[[elem]]'
+middle: ', [[elem]]'
+last: ', and [[elem]]'
+...
